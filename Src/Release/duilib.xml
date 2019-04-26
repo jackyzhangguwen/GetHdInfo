@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="434,320" mininfo="434,320" maxinfo="434,320" caption="0,0,0,46" sizebox="0,0,0,0">
+    <Font id = "0" name="Segoe UI" size="18" bold="true" italic="false" /> 
+	<Font id = "1" name="Segoe UI" size="24" bold="false" italic="false" /> 
+	<Font id = "2" name="Segoe UI" size="18" bold="false" italic="false" /> 
+
+	<!-- 整个窗口的背景色 -->
+	<VerticalLayout bkcolor="#ffffffff" bordersize="1" bordercolor="#c2c2c2"> 
+        <!-- 标题栏区 -->
+        <VerticalLayout height="45" width="434">
+			<HorizontalLayout height="2" bkcolor="#ffed1d1d">
+			</HorizontalLayout>
+            <HorizontalLayout bkcolor="#ffF0E68C"> <!-- 00ffffff -->
+				<VerticalLayout >
+					<HorizontalLayout float="true" pos="5,5,40,35" bkimage="file='images/logo.png'" />
+				</VerticalLayout>
+				<VerticalLayout float="true" pos="50,4,340,35">
+					<Label name="lable_caption" height="30" width="100" text="硬件信息" font="1"/>
+				</VerticalLayout>
+				<VerticalLayout float="true" pos="406,4,430,35">
+					<Button name="closebtn" width="70" height="30" normalimage="file='images/btn_close_n.png'"
+						hotimage="file='images/btn_close_h_p.png'" pushedimage="file='images/btn_close_h_p.png'"/>
+				</VerticalLayout>
+			</HorizontalLayout>
+        </VerticalLayout>
+		
+        <!-- 客户区 -->
+        <VerticalLayout  padding="40,24,0,0">
+			<!--文字提示区-->
+			<VerticalLayout height="200" width="350" childpadding="3">
+			    <HorizontalLayout bkcolor="00ffffff">
+				    <Label name="lable_hdsn" height="24" width="100" text="硬盘序列号" font="2"/>
+					<Edit name="editHdSn"  height="32" width="250" padding="0,0,0,0" bordersize="1" bordercolor="#c2c2c2" focusbordercolor="#87a9e0" maxchar="100" tooltip="please input"/>
+				</HorizontalLayout>
+				
+			    <HorizontalLayout bkcolor="00ffffff">
+				    <Label name="lable_hsmodel" height="24" width="100" text="   硬盘型号" font="2"/>
+					<Edit name="editHdMod"  height="32" width="250" padding="0,0,0,0" bordersize="1" bordercolor="#c2c2c2" focusbordercolor="#87a9e0" maxchar="100" tooltip="please input"/>
+				</HorizontalLayout>
+				
+			    <HorizontalLayout bkcolor="00ffffff">
+				    <Label name="lable_cpuid" height="24" width="100" text="CPU序列号" font="2"/>
+					<Edit name="editCPUID"  height="32" width="250" padding="0,0,0,0" bordersize="1" bordercolor="#c2c2c2" focusbordercolor="#87a9e0" maxchar="100" tooltip="please input"/>
+				</HorizontalLayout>
+
+			    <HorizontalLayout bkcolor="00ffffff">
+				    <Label name="lable_localmac" height="24" width="100" text="  本机MAC" font="2"/>
+					<Edit name="editLocalMac"  height="32" width="250" padding="0,0,0,0" bordersize="1" bordercolor="#c2c2c2" focusbordercolor="#87a9e0" maxchar="100" tooltip="please input"/>
+				</HorizontalLayout>
+				
+			    <HorizontalLayout bkcolor="00ffffff">
+				    <Label name="lable_routemac" height="24" width="100" text="  路由MAC" font="2"/>
+					<Edit name="editRouteMac"  height="32" width="250" padding="0,0,0,0" bordersize="1" bordercolor="#c2c2c2" focusbordercolor="#87a9e0" maxchar="100" tooltip="please input"/>
+				</HorizontalLayout>
+			</VerticalLayout>
+			
+			<!--token输入框-->
+			<!--
+			<VerticalLayout height="52" >
+				<Edit name="editToken"  height="32" width="345" padding="0,15,0,0" bordersize="2" bordercolor="#c2c2c2" focusbordercolor="#87a9e0" maxchar="100"tooltip="please input your token"/>
+				<Label name="lableErrorMsg" />
+			</VerticalLayout>
+			-->
+			
+			<!--按键区-->
+			<HorizontalLayout>
+			</HorizontalLayout>
+		</VerticalLayout>
+    </VerticalLayout>
+</Window>
